@@ -4,94 +4,104 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menu</title>
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/all.css">
+  <link rel="stylesheet" href="./assets/css/menu.css">
+  <script src="./assets/js/bootstrap.min.js"></script>
 </head>
 <body>
-<section class="menu">
-  <div class="container">
+<!-- <section class="menu">
+  <div class="container"> -->
     <!-- Row One -->
-    <div>
-      <h1>Our Menu</h1>
-      <p>We consider all the drivers of change gives you the components you need to change to create a truly happens.</p>
+    <div class="landing__menu">
+      <div class="container">
+        <h1>Our Menu</h1>
+        <p>We consider all the drivers of change gives you the components you need to change to create a truly happens.</p>
+      </div>
     </div>
     <!-- Row Two -->
-    <div class="menu-list">
+    <div class="menu__list">
+      <div class="container">
         <div>
-          <button>All</button>
+          <button class="active">All</button>
           <button>Breakfast</button>
           <button>Main Dishes</button>
           <button>Drinks</button>
           <button>Desserts</button>
         </div>
-        <div class="menu-cards">
-          <div class="card">
+        <div class="menu__cards row">
+          <div class="card col-12 col-md-4 col-lg-3">
             <img src="./assets/images/menu/menu1.png" alt="Fried Eggs">
-            <span>&dollar;9.99</span>
+            <span class="card__price">&dollar;9.99</span>
             <h2>Fried Eggs</h2>
             <p>Made with eggs, lettuce, salt, oil and other ingredients.</p>
           </div>
-          <div class="card">
+          <div class="card col-12 col-md-4 col-lg-3">
             <img src="./assets/images/menu/menu2.png" alt="Hawaiian Pizza">
-            <span>&dollar;15.99</span>
+            <span class="card__price">&dollar;15.99</span>
             <h2>Hawaiian Pizza</h2>
             <p>Made with eggs, lettuce, salt, oil and other ingredients.</p>
           </div>
-          <div class="card">
+          <div class="card col-12 col-md-4 col-lg-3">
             <img src="./assets/images/menu/menu3.png" alt="Martinez Cocktail">
-            <span>&dollar; 7.25</span>
+            <span class="card__price">&dollar; 7.25</span>
             <h2>Martinez Cocktail</h2>
             <p>Made with eggs, lettuce, salt, oil and other ingredients.</p>
           </div>
-          <div class="card">
+          <div class="card col-12 col-md-4 col-lg-3">
             <img src="./assets/images/menu/menu4.png" alt="Butterscotch Cake">
-            <span>&dollar; 20.99</span>
+            <span class="card__price">&dollar; 20.99</span>
             <h2>Butterscotch Cake</h2>
             <p>Made with eggs, lettuce, salt, oil and other ingredients.</p>
           </div>
-          <div class="card">
+          <div class="card col-12 col-md-4 col-lg-3">
             <img src="./assets/images/menu/menu5.png" alt="Mint Lemonade">
-            <span>&dollar; 5.89</span>
+            <span class="card__price">&dollar; 5.89</span>
             <h2>Mint Lemonade</h2>
             <p>Made with eggs, lettuce, salt, oil and other ingredients.</p>
           </div>
-          <div class="card">
+          <div class="card col-12 col-md-4 col-lg-3">
             <img src="./assets/images/menu/menu6.png" alt="Chocolate Icecream">
-            <span>&dollar; 18.05</span>
+            <span class="card__price">&dollar; 18.05</span>
             <h2>Chocolate Icecream</h2>
             <p>Made with eggs, lettuce, salt, oil and other ingredients.</p>
           </div>
-          <div class="card">
+          <div class="card col-12 col-md-4 col-lg-3">
             <img src="./assets/images/menu/menu7.png" alt="Cheese Burger">
-            <span>&dollar; 12.55</span>
+            <span class="card__price">&dollar; 12.55</span>
             <h2>Cheese Burger</h2>
             <p>Made with eggs, lettuce, salt, oil and other ingredients.</p>
           </div>
-          <div class="card">
+          <div class="card col-12 col-md-4 col-lg-3">
             <img src="./assets/images/menu/menu8.png" alt="Classic Waffles">
-            <span>&dollar; 9.99</span>
+            <span class="card__price">&dollar; 9.99</span>
             <h2>Classic Waffles</h2>
             <p>Made with eggs, lettuce, salt, oil and other ingredients.</p>
           </div>
         </div>
       </div>
-    <!-- Row Three -->
-    <div>
-      <div>
-        <h2>You can order through apps</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit enim bibendum sed et aliquet aliquet risus tempor semper.</p>
       </div>
-      <div class="menu-apps">
-        <img src="./assets/images/menu/company1.png" alt="Uber Eats">
-        <img src="./assets/images/menu/company2.png" alt="GRUBHUB">
-        <img src="./assets/images/menu/company3.png" alt="Postmates">
-        <img src="./assets/images/menu/company4.png" alt="DOORDASH">
-        <img src="./assets/images/menu/company5.png" alt="foodpandda">
-        <img src="./assets/images/menu/company6.png" alt="deliveroo">
-        <img src="./assets/images/menu/company7.png" alt="Instacart">
-        <img src="./assets/images/menu/company8.png" alt="JUST EAT">
-        <img src="./assets/images/menu/company9.png" alt="DiDi food">
+    <!-- Row Three -->
+    <div class="order__apps">
+      <div class="container row">
+        <div class="app__description col-12 col-lg-5">
+          <h2>You can order through apps</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit enim bibendum sed et aliquet aliquet risus tempor semper.</p>
+        </div>
+        <div class="menu__apps col-12 col-lg-7">
+          <img src="./assets/images/menu/company1.png" alt="Uber Eats">
+          <img src="./assets/images/menu/company2.png" alt="GRUBHUB">
+          <img src="./assets/images/menu/company3.png" alt="Postmates">
+          <img src="./assets/images/menu/company4.png" alt="DOORDASH">
+          <img src="./assets/images/menu/company5.png" alt="foodpandda">
+          <img src="./assets/images/menu/company6.png" alt="deliveroo">
+          <img src="./assets/images/menu/company7.png" alt="Instacart">
+          <img src="./assets/images/menu/company8.png" alt="JUST EAT">
+          <img src="./assets/images/menu/company9.png" alt="DiDi food">
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  <!-- </div>
+</section> -->
 </body>
 </html>
