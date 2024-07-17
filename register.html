@@ -4,16 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/register.css">
 </head>
 <body>
     <section class="register">
         <div class="register__header">
             <h1>Register</h1>
-            <div class="register__header__img">
-                <img src="./assets/images/register/register-img.png" alt="register register background image">
-            </div>
+            <div class="register__header__img"></div>
         </div>
         <div class="container">
             <div class="register__form">
@@ -26,7 +23,7 @@
                     </div>
                     <div class="register__form__element">
                         <label for="email">Email</label>
-                        <input id="email" placeholder="Enter Email" name="email" required>
+                        <input id="email" type="email" placeholder="Enter Email" name="email" required>
                         <span class="input__error">Please enter email</span>
                     </div>
                     <div class="register__form__element" >
@@ -36,12 +33,12 @@
                     </div>
                     <div class="register__form__element">
                         <label for="password">Password</label>
-                        <input id="password" placeholder="Enter Password" name="password" required>
+                        <input id="password" type="password"  placeholder="Enter Password" name="password" required>
                         <span class="input__error">Please enter password</span>
                     </div>
                     <div class="register__form__element">
                         <label for="confirm-password">Confirm Password</label>
-                        <input id="confirm-password" placeholder="confirm Password" name="confirm-password" required>
+                        <input id="confirm-password" type="password" placeholder="Enter confirm Password" name="confirm-password" required>
                         <span class="input__error">Please enter confirm password</span>
                     </div>
                     <div class="register__form__btns">
