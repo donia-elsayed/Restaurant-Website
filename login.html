@@ -4,25 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in</title>
+    <link rel="stylesheet" href="./assets/css/login.css">
 </head>
 <body>
-    <section class="log-in">
+    <section class="login">
+        <div class="login__header">
+            <h1>login</h1>
+        </div>
         <div class="container">
-            <form action="">      
-                  <label for="uname"><b>Username:</b></label>
-                  <input id="uname" placeholder="Enter Username" name="uname" required>
-              
-                  <label for="password"><b>Password:</b></label>
-                  <input id="password" placeholder="Enter Password" name="password" required>
-              
-                  <button type="submit">Login</button>
-                  <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
-                  </label>
-    
-                  <button type="button">Cancel</button>
-                  <span>Forgot <a href="#">password?</a></span>
-              </form>
+            <div class="login__form">
+                <form novalidate>      
+                    <div class="login__form__element">
+                        <label for="email">email</label>
+                        <input  type="email" id="email" placeholder="Enter Email" name="email" required>
+                        <span class="input__error">Please enter email</span>
+                    </div>
+                    <div class="login__form__element">
+                        <label for="password">password</label>
+                        <input  type="password" id="password" placeholder="Enter Password" name="password" required>
+                        <span class="input__error">Please enter password</span>
+                    </div>
+                    <button type="submit" class="btn__login">login</button>
+                    <div class="login__form__bottom">
+                        <label for="remember">
+                            <input type="checkbox" name="remember" id="remember"> Remember me
+                        </label>
+                        <a href="#">forgot password?</a>
+                    </div>
+                </form>
+                <div class="login__form__img"></div>
+            </div> 
         </div>
     </section>
 </body>
