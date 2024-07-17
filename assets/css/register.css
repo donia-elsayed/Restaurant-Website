@@ -1,0 +1,110 @@
+.register__header{
+    position: relative;
+}
+.register__header h1{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #ffffff;
+}
+.register__header__img img{
+    width: 100%;
+}
+.register__form{
+    background-color: #FFF8EE;
+    width:70%;
+    padding:15px;
+    margin:auto
+}
+.register__form h2{
+    text-transform: capitalize;
+    text-align: center;
+    color: #ad343e;
+}
+.register__form__element{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.register__form__element label{
+    color: #ad343e;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: bold;
+    margin:0 0 15px 50px;
+}
+.register__form__element input{
+    border: none;
+    padding: 10px 15px;
+    width: 70%;
+    margin-bottom: 15px;
+    align-self: center;
+    border-radius: 20px;
+}
+
+.input__error{
+    display: none;
+    color: red;
+    align-self: center;
+    position: absolute;
+    bottom: -15px;
+}
+input:focus{
+    outline: none;
+}
+input:required:invalid:focus{
+    border:2px solid #ff0000;
+}
+input:required:valid{
+    border:2px solid #eff4f1;
+}
+input:required:invalid:focus ~ .input__error{
+  display: block;
+}
+button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.register__form__btns{
+    text-align: center;
+    margin: 30px 0;
+}
+.btn__cancel{
+    background-color: #cecece;  
+    color: #ad343e;
+    font-weight: 600;
+}
+.btn__register{
+    background-color: #ad343e;
+    margin-left: 15px;
+    color: #ffffff;
+}
+
+@media (max-width:668px){
+    .register__form{
+      width:100%;
+    }
+    .register__form__element label{
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+    .register__form__element input{
+        width: 100%;
+    }
+    .input__error{
+        text-align: left;
+        left:10px;
+    }
+}
+@media (min-width:669px) and (max-width:920px){
+    .register__form__element label{
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    .register__form__element input{
+        width:80%;
+    }
+
+}
