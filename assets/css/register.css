@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 .register__header{
     position: relative;
 }
@@ -8,12 +13,15 @@
     transform: translate(-50%,-50%);
     color: #ffffff;
 }
-.register__header__img img{
-    width: 100%;
+.register__header__img{
+    background-image: url(../images/register/register-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;   
+    height: 200px;
 }
 .register__form{
     background-color: #FFF8EE;
-    width:70%;
+    width:60%;
     padding:15px;
     margin:auto
 }
@@ -32,12 +40,12 @@
     text-transform: capitalize;
     font-size: 16px;
     font-weight: bold;
-    margin:0 0 15px 50px;
+    margin:15px 0 15px 50px;
 }
 .register__form__element input{
     border: none;
-    padding: 10px 15px;
-    width: 70%;
+    padding:15px;
+    width: 75%;
     margin-bottom: 15px;
     align-self: center;
     border-radius: 20px;
@@ -46,9 +54,10 @@
 .input__error{
     display: none;
     color: red;
-    align-self: center;
+    align-self: flex-start;
     position: absolute;
-    bottom: -15px;
+    bottom: -10px;
+    margin-left: 110px;
 }
 input:focus{
     outline: none;
@@ -84,27 +93,44 @@ button{
 
 @media (max-width:668px){
     .register__form{
-      width:100%;
+      width:90%;
     }
     .register__form__element label{
-        margin-left: 10px;
-        margin-top: 15px;
+        margin-left: 20px;
+        margin-top: 20px;
     }
     .register__form__element input{
-        width: 100%;
+        width: 90%;
     }
     .input__error{
-        text-align: left;
-        left:10px;
+        margin-left: 20px;
     }
 }
 @media (min-width:669px) and (max-width:920px){
     .register__form__element label{
-        margin-left: 50px;
+        margin-left: 55px;
         margin-top: 20px;
     }
     .register__form__element input{
         width:80%;
     }
+    .input__error{
+        margin-left: 55px;
+    }
 
+}
+@media (min-width:991px) and (max-width:1024px){
+    .register__form{
+        width:65%;
+    }
+    .register__form__element label{
+        margin-left: 25px;
+        margin-top: 15px;
+    }
+    .register__form__element input{
+        width:80%;
+    }
+    .input__error{
+        margin-left: 70px;
+    }
 }
