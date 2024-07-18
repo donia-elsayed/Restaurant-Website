@@ -55,7 +55,7 @@ textarea::placeholder{
     flex-direction: column;
 }
 .contact-us__form__control{
-    flex-basis: 49%;
+    flex-basis: 45%;
 }
 .contact-us__info{
     flex-basis: 55%;
