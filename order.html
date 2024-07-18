@@ -1,132 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order Now</title>
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/all.css">
-    <link rel="stylesheet" href="./assets/css/order.css">
-    <script src="./assets/js/bootstrap.min.js"></script>
-</head>
-
-<body>
-    <section>
-        <div class="container">
-            <!-- Row One -->
-            <div class="landing__order">
-                <h1>Make Your Order</h1>
-                <p>What do you wanna order?</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Order Now</title>
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/all.css">
+        <link rel="stylesheet" href="./assets/css/header-footer.css">
+        <link rel="stylesheet" href="./assets/css/order.css">
+        <script src="./assets/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <!-- start Navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/home/logo.png" alt="logo-image">
+                <span class="logo">Bistro Bliss</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="order.html">Order</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                </ul>
+                <div class="d-flex">
+                <ul class="navbar-nav mb-2 mb-lg-0 nav-register">
+                    <li class="nav-item">
+                    <a class="nav-link" href="login.html">Log In</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="register.html">Sign Up</a>
+                    </li>
+                </ul>
+                </div>
             </div>
-            <!-- Row Two -->
-            <div class="user__orders">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Product</th>
-                        <th>Product Name</th>
-                        <th>Unit Price</th>
-                        <th>Quantity</th>
-                        <th>Total</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="order__img">
-                            <img src="assets/images/order/order1.png" alt="Cheese Burger">
-                        </td>
-                        <td class="order__name">Cheese Burger</td>
-                        <td class="order__price">&dollar;150</td>
-                        <td class="order__quantity">
-                            <button>+</button>
-                            <span>1</span>
-                            <button>-</button>
-                        </td>
-                        <td class="order__price">&dollar;150</td>
-                        <td class="delete__order">
-                            <button>x</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="order__img">
-                            <img src="assets/images/order/order2.png" alt="Classic Waffles">
-                        </td>
-                        <td class="order__name">Classic Waffles</td>
-                        <td class="order__price">&dollar;150</td>
-                        <td class="order__quantity">
-                            <button>+</button>
-                            <span>2</span>
-                            <button>-</button>
-                        </td>
-                        <td class="order__price">&dollar;300</td>
-                        <td class="delete__order">
-                            <button>x</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="order__img">
-                            <img src="assets/images/order/order3.png" alt="Martinez Cocktail">
-                        </td>
-                        <td class="order__name">Martinez Cocktail</td>
-                        <td class="order__price">&dollar;50</td>
-                        <td class="order__quantity">
-                            <button>+</button>
-                            <span>2</span>
-                            <button>-</button>
-                        </td>
-                        <td class="order__price">&dollar;100</td>
-                        <td class="delete__order">
-                            <button>x</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
             </div>
-            <!-- Row Three -->
-            <div class="order__info">
-                <div class="order__forms">
-                    <!-- Contact Information Form -->
-                    <div class="order__contact">
-                        <h2>Contact Information</h2>
-                        <form>
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" placeholder="Enter Your Name"/><br />
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" placeholder="Enter Email Address"/><br />
-                            <label for="phone">Phone Number:</label>
-                            <input type="tel" id="phone" placeholder="Enter Your Phone Number"/>
-                        </form>
-                        <button>Order Now</button>
+        </nav>
+        <!-- End Navbar -->
+        <section>
+            <div class="container">
+                <!-- Row One -->
+                <div class="landing__order">
+                    <h1>Make Your Order</h1>
+                    <p>What do you wanna order?</p>
+                </div>
+                <!-- Row Two -->
+                <div class="user__orders">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Product Name</th>
+                            <th>Unit Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="order__img">
+                                <img src="assets/images/order/order1.png" alt="Cheese Burger">
+                            </td>
+                            <td class="order__name">Cheese Burger</td>
+                            <td class="order__price">&dollar;150</td>
+                            <td class="order__quantity">
+                                <button>+</button>
+                                <span>1</span>
+                                <button>-</button>
+                            </td>
+                            <td class="order__price">&dollar;150</td>
+                            <td class="delete__order">
+                                <button>x</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="order__img">
+                                <img src="assets/images/order/order2.png" alt="Classic Waffles">
+                            </td>
+                            <td class="order__name">Classic Waffles</td>
+                            <td class="order__price">&dollar;150</td>
+                            <td class="order__quantity">
+                                <button>+</button>
+                                <span>2</span>
+                                <button>-</button>
+                            </td>
+                            <td class="order__price">&dollar;300</td>
+                            <td class="delete__order">
+                                <button>x</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="order__img">
+                                <img src="assets/images/order/order3.png" alt="Martinez Cocktail">
+                            </td>
+                            <td class="order__name">Martinez Cocktail</td>
+                            <td class="order__price">&dollar;50</td>
+                            <td class="order__quantity">
+                                <button>+</button>
+                                <span>2</span>
+                                <button>-</button>
+                            </td>
+                            <td class="order__price">&dollar;100</td>
+                            <td class="delete__order">
+                                <button>x</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+                <!-- Row Three -->
+                <div class="order__info">
+                    <div class="order__forms">
+                        <!-- Contact Information Form -->
+                        <div class="order__contact">
+                            <h2>Contact Information</h2>
+                            <form>
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" placeholder="Enter Your Name"/><br />
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" placeholder="Enter Email Address"/><br />
+                                <label for="phone">Phone Number:</label>
+                                <input type="tel" id="phone" placeholder="Enter Your Phone Number"/>
+                            </form>
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                    <div class="order__subtotal">
+                        <h2>Order Subtotal</h2>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Subtotal</td>
+                                    <td>550.00$</td>
+                                </tr>
+                                <tr>
+                                    <td>Taxes</td>
+                                    <td>0.00$</td>
+                                </tr>
+                                <tr>
+                                    <td>Delivery</td>
+                                    <td>25.00$</td>
+                                </tr>
+                                <tr>
+                                    <td>Total</td>
+                                    <td>575.00$</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-                <div class="order__subtotal">
-                    <h2>Order Subtotal</h2>
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td>Subtotal</td>
-                                <td>550.00$</td>
-                            </tr>
-                            <tr>
-                                <td>Taxes</td>
-                                <td>0.00$</td>
-                            </tr>
-                            <tr>
-                                <td>Delivery</td>
-                                <td>25.00$</td>
-                            </tr>
-                            <tr>
-                                <td>Total</td>
-                                <td>575.00$</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <section class="footer">
+            <div class="container">
+              <div class="footer-details">
+                <div class="row">
+                  <div class="row-text col-md-6 col-sm-12">
+                    <a class="logo" href="index.html">
+                      <span>Bistro Bliss</span>
+                    </a>
+                    <p>In the new era of technology we look a in the future <br> with certainty and pride to for our company and.</p>
+                    <div class="social-icons">
+                      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-12 mobile-d-none">
+                    <div class="grid-container">
+                      <div class="grid-item">
+                        <img src="./assets/images/home/footer-image1.png" alt="footer image">
+                      </div>
+                      <div class="grid-item">
+                        <img src="./assets/images/home/footer-image2.png" alt="footer image">
+                      </div>
+                      <div class="grid-item">
+                        <img src="./assets/images/home/footer-image3.png" alt="footer image">
+                      </div>
+                      <div class="grid-item">
+                        <img src="./assets/images/home/footer-image4.png" alt="footer image">
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="copy-right">
+                    Copyright © 2024 Sprints Team 3. All Rights Reserved
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
     </body>
-    
-    </html>
+</html>
