@@ -1,61 +1,189 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <script src="assets/js/bootstrap.min.js"></script>
 </head>
-
 <body>
- <section class="about">
-    <h1>About</h1>
+    <main>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+              <a class="navbar-brand" href="index.html">
+                <img src="assets/images/home/logo.png" alt="logo-image">
+                <span class="logo">Bistro Bliss</span>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="order.html">Order</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+                <div class="d-flex">
+                  <ul class="navbar-nav mb-2 mb-lg-0 nav-register">
+                    <li class="nav-item">
+                      <a class="nav-link" href="login.html">Log In</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="register.html">Sign Up</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        <section class="about">
+            <header class="about__header">
+                <div class="about__header__content">
+                    <h1>About</h1>
+                    <p>Discover our journey and meet the passionate team behind our healthy food revolution</p>
+                </div>
+            </header>
+            <div class="about__mission m-5">
+                <div class="container">
+                    <header>
+                        <h2>Mission</h2>
+                    </header>
+                    <div class="about__mission__content">
+                        <div class="about__mission__content__img">
+                            <img src="assets/images/about/mission.png" alt="photo for happy customers">
+                        </div>
+                        <div class="about__mission__content__text">
+                            <p>Our mission is to delight our customers with delicious, wholesome meals that nourish
+                                their bodies
+                                We offer all your favorite dishes cooked with healthy alternatives. <br /> We strive to
+                                create a positive
+                                dining experience that promotes health,well-being and long-term happiness.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about__vision m-5">
+                <div class="container">
+                    <header class="about__vision__header">
+                        <h2>Vision</h2>
+                    </header>
+                    <div class="about__vision__content">
+                        <div class="about__vision__content__text">
+                            <p> To be the go-to destination for health-conscious individuals seeking flavorful,
+                                nutritious food
+                                We envision a community where people prioritize their well-being without compromising on
+                                taste,
+                                and where our restaurant plays a central role in fostering healthier lifestyles.
+                            </p>
+                        </div>
+                        <div class="about__vision__content__img">
+                            <img src="./assets/images/about/vision.png" alt="photo for customers enjoing food" />
+                        </div>
 
-    <section>
-        <h2>Mission</h2>
-        <p>“Our mission is to delight our customers with delicious, wholesome meals that nourish their bodies. We offer
-            all your favorite dishes cooked with healthy alternatives. We strive to create a positive dining experience
-            that promotes health,well-being and long-term happiness.”</p>
-
-        <h2>Vision</h2>
-        <p>“To be the go-to destination for health-conscious individuals seeking flavorful, nutritious food. We envision
-            a community where people prioritize their well-being without compromising on taste, and where our restaurant
-            plays a central role in fostering healthier lifestyles.”</p>
-        <ul>
-            <li><img src="./assets/images/about/burger.jpg" alt="healthy burger" width="500"> </li>
-            <li><img src="./assets/images/about/chicken.jpg" alt="healthy chicken wings" width="516" /></li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Meet Our Dedicated Staff</h2>
-        <p>Our team is the heart of our restaurant. From our talented chefs who whip up culinary magic to our friendly
-            servers who make every visit memorable, each staff member plays a crucial role:</p>
-        <dl>
-            <dt>Chefs:</dt>
-            <dd>Passionate about flavor and nutrition, our chefs create dishes that are both delicious and healthful.
-            </dd>
-            <img src="./assets/images/about/chef.jpg" alt="chef adding shea seeds and spices to the salad" width="320" />
-            <dt>Servers:</dt>
-            <dd>Our servers are more than just order-takers; they’re ambassadors of wellness. They’ll guide you through
-                the menu, answer your questions, and ensure your dining experience is exceptional.</dd>
-            <img src="./assets/images/about/servers.jpg" alt="waiter taking orders and guiding customers" width="320" />
-            <dt>Nutrition Educators:</dt>
-            <dd>Yes, we consider ourselves educators too! Our staff loves sharing insights about ingredients, cooking
-                techniques, and how certain foods benefit your body.</dd>
-            <dt>Community Builders:</dt>
-            <dd>We believe that food brings people together. Our staff fosters a warm, welcoming environment where
-                friendships can flourish over a shared meal.</dd>
-        </dl>
-        <ul>
-            <li><img src="./assets/images/about/enviroment.jpg" alt="our healthy enviroment" width="455" /></li>
-            <li><img src="./assets/images/about/restaurant.jpg" alt="photo of the restaurant" width="455" /></li>
-            <li>Feel The Authentic & Original Taste from us.</li>
-        </ul>
-        <p>Come and Visit us, Let’s celebrate health, happiness, and good food together at our vibrant restaurant! </p>
-    </section>
- </section>  
+                    </div>
+                </div>
+            </div>
+            <div class="about__staff">
+                <header class="about__staff__header">
+                    <h2>Meet Our Dedicated Staff</h2>
+                    <p>Our team is the heart of our restaurant. From our talented chefs who whip up culinary magic to
+                        our friendly
+                        servers who make every visit memorable, each staff member plays a crucial role
+                    </p>
+                </header>
+                <div class="container">
+                    <div class="about__staff__items">
+                        <div class="about__staff__item">
+                            <div class="about__staff__item__image">
+                                <img src="assets/images/about/chef.jpg" />
+                            </div>
+                            <h3>Chefs</h3>
+                            <p>Passionate about flavor and nutrition, our chefs create dishes that are both delicious
+                                and healthful.</p>
+                        </div>
+                        <div class="about__staff__item">
+                            <div class="about__staff__item__image">
+                                <img src="assets/images/about/servers.jpg" />
+                            </div>
+                            <h3>Servers</h3>
+                            <p>Our servers are more than just order-takers; they’re ambassadors of wellness. They’ll
+                                guide
+                                you through the menu, answer your questions, and ensure your dining experience is
+                                exceptional.
+                            </p>
+                        </div>
+                        <div class="about__staff__item">
+                            <div class="about__staff__item__image">
+                                <img src="assets/images/about/nutritionist.jpg" />
+                            </div>
+                            <h3>Nutrition Educators</h3>
+                            <p>Yes, we consider ourselves educators too! Our staff loves sharing insights about
+                                ingredients,
+                                cooking techniques, and how certain foods benefit your body.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="container">
+              <div class="footer-details">
+                <div class="row">
+                  <div class="row-text col-md-6 col-sm-12">
+                    <a class="logo" href="index.html">
+                      <span>Bistro Bliss</span>
+                    </a>
+                    <p>In the new era of technology we look a in the future <br> with certainty and pride to for our company and.</p>
+                    <div class="social-icons">
+                      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-12 mobile-d-none">
+                    <div class="grid-container">
+                      <div class="grid-item">
+                        <img src="./assets/images/home/footer-image1.png" alt="footer image">
+                      </div>
+                      <div class="grid-item">
+                        <img src="./assets/images/home/footer-image2.png" alt="footer image">
+                      </div>
+                      <div class="grid-item">
+                        <img src="./assets/images/home/footer-image3.png" alt="footer image">
+                      </div>
+                      <div class="grid-item">
+                        <img src="./assets/images/home/footer-image4.png" alt="footer image">
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="copy-right">
+                    Copyright © 2024 Sprints Team 3. All Rights Reserved
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>   
+    </main>
 </body>
 
 </html>
