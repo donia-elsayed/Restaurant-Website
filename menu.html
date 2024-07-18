@@ -4,91 +4,181 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menu</title>
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/all.css">
+  <link rel="stylesheet" href="./assets/css/menu.css">
+  <script src="./assets/js/bootstrap.min.js"></script>
 </head>
 <body>
-<section class="menu">
-  <div class="container">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/home/logo.png" alt="logo-image">
+        <span class="logo">Bistro Bliss</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="order.html">Order</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <ul class="navbar-nav mb-2 mb-lg-0 nav-register">
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Log In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+<!-- <section class="menu">
+  <div class="container"> -->
     <!-- Row One -->
-    <div>
-      <h1>Our Menu</h1>
-      <p>We consider all the drivers of change gives you the components you need to change to create a truly happens.</p>
+    <div class="landing__menu">
+      <div class="container">
+        <h1>Our Menu</h1>
+        <p>We consider all the drivers of change gives you the components you need to change to create a truly happens.</p>
+      </div>
     </div>
     <!-- Row Two -->
-    <div class="menu-list">
+    <div class="menu__list">
+      <div class="container">
         <div>
-          <button>All</button>
+          <button class="active">All</button>
           <button>Breakfast</button>
           <button>Main Dishes</button>
           <button>Drinks</button>
           <button>Desserts</button>
         </div>
-        <div class="menu-cards">
-          <div class="card">
+        <div class="menu__cards row">
+          <div class="card col-12 col-md-4 col-lg-3">
             <img src="./assets/images/menu/menu1.png" alt="Fried Eggs">
-            <span>&dollar;9.99</span>
+            <span class="card__price">&dollar;9.99</span>
             <h2>Fried Eggs</h2>
             <p>Made with eggs, lettuce, salt, oil and other ingredients.</p>
           </div>
-          <div class="card">
+          <div class="card col-12 col-md-4 col-lg-3">
             <img src="./assets/images/menu/menu2.png" alt="Hawaiian Pizza">
-            <span>&dollar;15.99</span>
+            <span class="card__price">&dollar;15.99</span>
             <h2>Hawaiian Pizza</h2>
             <p>Made with eggs, lettuce, salt, oil and other ingredients.</p>
           </div>
-          <div class="card">
+          <div class="card col-12 col-md-4 col-lg-3">
             <img src="./assets/images/menu/menu3.png" alt="Martinez Cocktail">
-            <span>&dollar; 7.25</span>
+            <span class="card__price">&dollar; 7.25</span>
             <h2>Martinez Cocktail</h2>
             <p>Made with eggs, lettuce, salt, oil and other ingredients.</p>
           </div>
-          <div class="card">
+          <div class="card col-12 col-md-4 col-lg-3">
             <img src="./assets/images/menu/menu4.png" alt="Butterscotch Cake">
-            <span>&dollar; 20.99</span>
+            <span class="card__price">&dollar; 20.99</span>
             <h2>Butterscotch Cake</h2>
             <p>Made with eggs, lettuce, salt, oil and other ingredients.</p>
           </div>
-          <div class="card">
+          <div class="card col-12 col-md-4 col-lg-3">
             <img src="./assets/images/menu/menu5.png" alt="Mint Lemonade">
-            <span>&dollar; 5.89</span>
+            <span class="card__price">&dollar; 5.89</span>
             <h2>Mint Lemonade</h2>
             <p>Made with eggs, lettuce, salt, oil and other ingredients.</p>
           </div>
-          <div class="card">
+          <div class="card col-12 col-md-4 col-lg-3">
             <img src="./assets/images/menu/menu6.png" alt="Chocolate Icecream">
-            <span>&dollar; 18.05</span>
+            <span class="card__price">&dollar; 18.05</span>
             <h2>Chocolate Icecream</h2>
             <p>Made with eggs, lettuce, salt, oil and other ingredients.</p>
           </div>
-          <div class="card">
+          <div class="card col-12 col-md-4 col-lg-3">
             <img src="./assets/images/menu/menu7.png" alt="Cheese Burger">
-            <span>&dollar; 12.55</span>
+            <span class="card__price">&dollar; 12.55</span>
             <h2>Cheese Burger</h2>
             <p>Made with eggs, lettuce, salt, oil and other ingredients.</p>
           </div>
-          <div class="card">
+          <div class="card col-12 col-md-4 col-lg-3">
             <img src="./assets/images/menu/menu8.png" alt="Classic Waffles">
-            <span>&dollar; 9.99</span>
+            <span class="card__price">&dollar; 9.99</span>
             <h2>Classic Waffles</h2>
             <p>Made with eggs, lettuce, salt, oil and other ingredients.</p>
           </div>
         </div>
       </div>
-    <!-- Row Three -->
-    <div>
-      <div>
-        <h2>You can order through apps</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit enim bibendum sed et aliquet aliquet risus tempor semper.</p>
       </div>
-      <div class="menu-apps">
-        <img src="./assets/images/menu/company1.png" alt="Uber Eats">
-        <img src="./assets/images/menu/company2.png" alt="GRUBHUB">
-        <img src="./assets/images/menu/company3.png" alt="Postmates">
-        <img src="./assets/images/menu/company4.png" alt="DOORDASH">
-        <img src="./assets/images/menu/company5.png" alt="foodpandda">
-        <img src="./assets/images/menu/company6.png" alt="deliveroo">
-        <img src="./assets/images/menu/company7.png" alt="Instacart">
-        <img src="./assets/images/menu/company8.png" alt="JUST EAT">
-        <img src="./assets/images/menu/company9.png" alt="DiDi food">
+    <!-- Row Three -->
+    <div class="order__apps">
+      <div class="container row">
+        <div class="app__description col-12 col-lg-5">
+          <h2>You can order through apps</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit enim bibendum sed et aliquet aliquet risus tempor semper.</p>
+        </div>
+        <div class="menu__apps col-12 col-lg-7">
+          <img src="./assets/images/menu/company1.png" alt="Uber Eats">
+          <img src="./assets/images/menu/company2.png" alt="GRUBHUB">
+          <img src="./assets/images/menu/company3.png" alt="Postmates">
+          <img src="./assets/images/menu/company4.png" alt="DOORDASH">
+          <img src="./assets/images/menu/company5.png" alt="foodpandda">
+          <img src="./assets/images/menu/company6.png" alt="deliveroo">
+          <img src="./assets/images/menu/company7.png" alt="Instacart">
+          <img src="./assets/images/menu/company8.png" alt="JUST EAT">
+          <img src="./assets/images/menu/company9.png" alt="DiDi food">
+        </div>
+      </div>
+    </div>
+  <!-- </div>
+</section> -->
+<section class="footer">
+  <div class="container">
+    <div class="footer-details">
+      <div class="row">
+        <div class="row-text col-md-6 col-sm-12">
+          <a class="logo" href="index.html">
+            <span>Bistro Bliss</span>
+          </a>
+          <p>In the new era of technology we look a in the future <br> with certainty and pride to for our company and.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 mobile-d-none">
+          <div class="grid-container">
+            <div class="grid-item">
+              <img src="./assets/images/home/footer-image1.png" alt="footer image">
+            </div>
+            <div class="grid-item">
+              <img src="./assets/images/home/footer-image2.png" alt="footer image">
+            </div>
+            <div class="grid-item">
+              <img src="./assets/images/home/footer-image3.png" alt="footer image">
+            </div>
+            <div class="grid-item">
+              <img src="./assets/images/home/footer-image4.png" alt="footer image">
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="copy-right">
+          Copyright © 2024 Sprints Team 3. All Rights Reserved
+        </div>
       </div>
     </div>
   </div>
