@@ -7,230 +7,379 @@
     <title>Restaurant</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/all.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="./assets/js/bootstrap.min.js"></script>
 </head>
 <body>
   <!-- Start Landing Page -->
   <div class="landing-page" id="landing">
-    <div class="container">
-          <div>
-            <div class="logo">
-              <a href="index.html"><img src="./imgs/japanese-food.png" alt="logo"></a>
-              <span>Bistro Bliss</span>
-            </div>
-            <div>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="order.html">Order</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html">Log In</a></li>
-                <li><a href="register.html">Register</a></li>
+      <!-- start Navbar -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/images/home/logo.png" alt="logo-image">
+            <span class="logo">Bistro Bliss</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="order.html">Order</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <ul class="navbar-nav mb-2 mb-lg-0 nav-register">
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">Log In</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="register.html">Sign Up</a>
+                </li>
               </ul>
-
-              <button class="toggle-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>
             </div>
           </div>
-    </div>
-    <div class="introduction-text">
-      <h1>Best food for your taste</h1>
-      <p>Discover delectable cuisine and unforgettable moments in our welcoming, culinary haven.</p>
-      <button>Book A Table</button>
-      <button>Explore Menu</button>
-    </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+
+      <!-- Start Home Carousel -->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/images/home/carousel-image.png" class="d-block w-100" alt="image Big Offer one">
+            <div class="carousel-caption d-md-block">
+              <h5>Best food for <br> your taste</h5>
+              <p>Discover delectable cuisine and unforgettable moments <br> our welcoming, culinary haven.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/home/carousel-image.png" class="d-block w-100" alt="image Big Offer two">
+            <div class="carousel-caption d-md-block">
+              <h5>Best food for <br> your taste</h5>
+              <p>Discover delectable cuisine and unforgettable moments <br> our welcoming, culinary haven.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/home/carousel-image.png" class="d-block w-100" alt="image Big Offer three">
+            <div class="carousel-caption d-md-block">
+              <h5>Best food for <br> your taste</h5>
+              <p>Discover delectable cuisine and unforgettable moments <br> our welcoming, culinary haven.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev mobile-d-none" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next mobile-d-none" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- End Home Carousel-->
   </div>
   <!-- End Landing Page -->
   
-  <div class="container">
+
       <!-- Start menu -->
-    <section class="menu">
-      <div>
-        <h2>Browse Our Menu</h2>
-        <div>
-          <div>
-            <i></i>
-            <h3>Breakfast</h3>
-            <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
-            <button>explore Menu</button>
-          </div>
-          <div>
-            <i></i>
-            <h3>Breakfast</h3>
-            <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
-            <button>explore Menu</button>
-          </div>
-          <div>
-            <i></i>
-            <h3>Breakfast</h3>
-            <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
-            <button>explore Menu</button>
-          </div>
-          <div>
-            <i></i>
-            <h3>Breakfast</h3>
-            <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
-            <button>explore Menu</button>
+
+      <section class="menu">
+        <div class="container">
+          <div class="padding-block">
+            <h2 class="menu-header">Browse Our Menu</h2>
+            <div class="menu-cards">
+              <div class="row">
+                <div class="col-md-6 col-lg-3 col-sm-12">
+                  <div class="card">
+                    <span class="icon-menu">
+                      <i class="fa-solid fa-mug-saucer"></i>
+                    </span>
+                    <h3>Breakfast</h3>
+                    <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
+                    <a href="#">Explore Menu</a>
+                </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-12">
+                  <div class="card">
+                    <span class="icon-menu">
+                      <i class="fa-solid fa-utensils"></i>
+                    </span>
+                    <h3>Main Dishes</h3>
+                    <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
+                    <a href="#">Explore Menu</a>
+                </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-12">
+                  <div class="card">
+                    <span class="icon-menu">
+                      <i class="fa-solid fa-whiskey-glass"></i>
+                    </span>
+                    <h3>Drinks</h3>
+                    <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
+                    <a href="#">Explore Menu</a>
+                </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-12">
+                  <div class="card">
+                    <span class="icon-menu">
+                      <i class="fa-solid fa-cake-candles"></i>
+                    </span>
+                    <h3>Desserts</h3>
+                    <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
+                    <a href="#">Explore Menu</a>
+                </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-
+      </section>
 <!-- End Menu -->
 
   <!-- Start about -->
-  <section class="about">
-      <div>
-        <img src="./imgs/Image.png" alt="about-image">
+<section class="about-us">
+  <div class="container">
+    <div class="padding-block">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="about-image">
+            <img src="./assets/images/home/about-image.png" alt="about image">
+            <div class="info-image mobile-d-none">
+              <h4>Come and visit us</h4>
+              <p><i class="fa-solid fa-phone"></i>+201012356626</p>
+              <p><i class="fa-regular fa-envelope"></i>happytummy@restaurant.com</p>
+              <p><i class="fa-solid fa-location-dot"></i> Cairo - Egypt</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="about-info">
+            <h3>We provide healthy <br>food for your family.</h3>
+            <p>Our story began with a vision to create a unique dining experience that merges fine dining, exceptional service, and a vibrant ambiance. Rooted in city's rich culinary culture, we aim to honor our local roots while infusing a global palate.</p>
+            <p>At place, we believe that dining is not just about food, but also about the overall experience. Our staff, renowned for their warmth and dedication, strives to make every visit an unforgettable event.</p>
+            <button>More About Us</button>
+          </div>
+        </div>
       </div>
-      <div>
-        <h3>We provide healthy food for your family.</h3>
-        <p>Our story began with a vision to create a unique dining experience that merges fine dining, exceptional service, and a vibrant ambiance. Rooted in city's rich culinary culture, we aim to honor our local roots while infusing a global palate.</p>
-        <p>At place, we believe that dining is not just about food, but also about the overall experience. Our staff, renowned for their warmth and dedication, strives to make every visit an unforgettable event.</p>
-        <button>More About Us</button>
-      </div>
-  </section>
+    </div>
+  </div>
+</section>
   <!-- End about -->
   
-  <!-- Start pages -->
-  <section class="pages">
-      <h3>We also offer unique services for your events</h3>
-      <div>
-        <div>
-          <img src="./assets/images/home/kebab-set-table 1.png" alt="card-image">
-          <h4>Caterings</h4>
-          <p>In the new era of technology we look in the future with certainty for life.</p>
-        </div>
+  <!-- Start Service pages -->
 
-        <div>
-          <img src="./assets/images/home/angele-kamp-poH6OvcEeXE-unsplash.jpg" width="250" height="250" alt="birthday image">
-          <h4>Birthdays</h4>
-          <p>In the new era of technology we look in the future with certainty for life.</p>
-        </div>
-
-        <div>
-          <img src="./assets/images/home/danie-franco-7XqL_DVuBMw-unsplash.jpg" width="270" alt="wedding image">
-          <h4>Weddings</h4>
-          <p>In the new era of technology we look in the future with certainty for life.</p>
-        </div>
-
-        <div>
-          <img src="./assets/images/home/Mask group (2).png" alt="events image">
-          <h4>Events</h4>
-          <p>In the new era of technology we look in the future with certainty for life.</p>
+<section class="service">
+    <div class="container">
+      <div class="padding-block">
+        <h2 class="service-head">We also offer unique<br>services for your events</h2>
+        <div class="row">
+          <div class="col-md-6 col-lg-3 col-sm-12">
+            <div class="service-card">
+                <img src="./assets/images/home/service-image1.png" class="card-img-top" alt="Service image">
+                <div class="card-body">
+                  <h4 class="card-title">Caterings</h4>
+                  <p class="card-text">In the new era of technology we look in the future with certainty for life.</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 col-sm-12">
+            <div class="service-card">
+                <img src="./assets/images/home/birthday-image.jpg" class="card-img-top" alt="Service image">
+                <div class="card-body">
+                  <h4 class="card-title">Birthday</h4>
+                  <p class="card-text">In the new era of technology we look in the future with certainty for life.</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 col-sm-12">
+            <div class="service-card">
+                <img src="./assets/images/home/weddings-image.jpg" class="card-img-top" alt="Service image">
+                <div class="card-body">
+                  <h4 class="card-title">Weddings</h4>
+                  <p class="card-text">In the new era of technology we look in the future with certainty for life.</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 col-sm-12">
+            <div class="service-card">
+                <img src="./assets/images/home/Events-image.png" class="card-img-top" alt="Service image">
+                <div class="card-body">
+                  <h4 class="card-title">Events</h4>
+                  <p class="card-text">In the new era of technology we look in the future with certainty for life.</p>
+                </div>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
   </section>
-  <!-- End pages -->
+  <!-- End Service page -->
+
+  <!-- Start Order Page -->
+   <section class="order">
+    <div class="container">
+          <div class="order-info">
+              <div class="row">
+                <div class="col-md-6 col-sm-12 mobile-d-none">
+                  <div class="order-images">
+                    <div class="grid-one-image">
+                      <img src="./assets/images/home/order-image1.png" alt="">
+                    </div>
+                    <div class="grid-two-image">
+                      <img class="one" src="./assets/images/home/order-image2.png" alt="">
+                      <img class="two" src="./assets/images/home/order-image3.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <div class="order-text">
+                    <h3>Fastest Food <br> Delivery in City</h3>
+                    <p>Our visual designer lets you quickly and of drag a down <br> your way to customapps for both keep desktop. </p>
+                    <div class="icons">
+                      <p><i class="fa-regular fa-clock mobile-d-none"></i> Delivery within 30 minutes</p>
+                      <p><i class="fa-solid fa-money-bill-1 mobile-d-none"></i> Best Offer & Prices</p>
+                      <p><i class="fa-solid fa-cart-shopping mobile-d-none"></i> Online Services Available</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </div>
+   </section>
+  <!-- Start Order Page -->
   
-  <!-- Start Content -->
-  <section class="Content">
-      <div>
-        <div>
-          <img src="./assets/images/home/mid-shot-chef-holding-plate-with-pasta-making-ok-sign 1.png" alt="cook image">
-        </div>
-        <div class="images">
-          <img src="./assets/images/home/sour-curry-with-snakehead-fish-spicy-garden-hot-pot-thai-food 1.png" alt="sochi image">
-          <img src="./assets/images/home/sadj-iron-pot-with-various-salads 1.png" alt="image">
-        </div>
-      </div>
-      <div>
-        <h3>Fastest Food Delivery in City</h3>
-        <p>Our visual designer lets you quickly and of drag a down your way to customapps for both keep desktop.</p>
-        <div class="features">
-          <div>
-            <i></i>
-            <p>Delivery within 30 minutes</p>
-          </div>
-          <div>
-            <i></i>
-            <p>Best Offer & Prices</p>
-          </div>
-          <div>
-            <i></i>
-            <p>Online Services Available</p>
-          </div>
-        </div>
-      </div>
-  </section>
-  <!-- End content -->
   
   <!-- Start Testimonial -->
-  <div class="testimonial">
-    <h2>What Our Customers Say</h2>
-      <div>
-        <div>
-          <h3>“The best restaurant”</h3>
-          <p>Last night, we dined at place and were simply blown away. From the moment we stepped in, we were enveloped in an inviting atmosphere and greeted with warm smiles.</p>
-          <div>
-            <img src="./assets/images/home/Ellipse 19.png" alt="avatar">
-            <div>
-              <h4>Sophire Robson</h4>
-              <p>Los Angeles, CA</p>
-            </div>
-          </div>
-        </div>
-        <div>
-          <h3>“The best restaurant”</h3>
-          <p>Last night, we dined at place and were simply blown away. From the moment we stepped in, we were enveloped in an inviting atmosphere and greeted with warm smiles.</p>
-          <div>
-            <img src="./assets/images/home/Image@2x.png" alt="avatar">
-            <div>
-              <h4>Sophire Robson</h4>
-              <p>Los Angeles, CA</p>
-            </div>
-          </div>
-        </div>
-        <div>
-          <h3>“The best restaurant”</h3>
-          <p>Last night, we dined at place and were simply blown away. From the moment we stepped in, we were enveloped in an inviting atmosphere and greeted with warm smiles.</p>
-          <div>
-            <img src="./assets/images/home/Image (1).png" alt="avatar">
-            <div>
-              <h4>Sophire Robson</h4>
-              <p>Los Angeles, CA</p>
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
-  <!-- End Testimonial -->
-  
-  <!-- Start Footer -->
-  <section class="footer">
-    <di>
-      <div>
-        <div>
-          <img src="./assets/images/home/japanese-food.png" alt="food image">
-          <h3>Bistro Bliss</h3>
-        </div>
-        <p>In the new era of technology we look a in the future with certainty and pride to for our company and.</p>
-        <div class="social">
-          <i></i>
-          <i></i>
-          <i></i>
-          <i></i>
-        </div>
-      </div>
 
-      <div>
-       <h3>follow us on Instagram</h3>
-       <div>
-        <img src="./assets/images/home/pexels-steve-3789885 1.png" alt="footer image">
-        <img src="./assets/images/home/eiliv-aceron-d5PbKQJ0Lu8-unsplash 1.png" alt="footer image">
-        <img src="./assets/images/home/Mask group (3).png" alt="footer image">
-        <img src="./assets/images/home/Mask group (3).png" alt="footer image">
-       </div>
+  <section class="testimonial">
+    <div class="container">
+      <div class="padding-block">
+        <h2>What Our Customers Say</h2>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 col-sm-12">
+            <div class="testimonial-box">
+              <div class="testimonial-box-info">
+                <h4>"The best restaurant"</h4>
+                <p>Last night, we dined at place and were simply blown away. From the moment we stepped in, we were enveloped in an inviting atmosphere and greeted with warm smiles.</p>
+
+              </div>
+              <hr>
+              <div class="testimonial-image">
+                <img src="./assets/images/home/testimonial-image1.png" alt="Testimonial image">
+                <div class="testimonial-text">
+                  <p>Sophire Robson</p>
+                  <span>Los Angeles, CA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-sm-12">
+            <div class="testimonial-box">
+              <div class="testimonial-box-info">
+                <h4>“Simply delicious”</h4>
+                <p>Place exceeded my expectations on all fronts. The ambiance was cozy and relaxed, making it a perfect venue for our anniversary dinner. Each dish was prepared and beautifully presented.</p>
+
+              </div>
+              <hr>
+              <div class="testimonial-image">
+                <img src="./assets/images/home/testimonial-image2.png" alt="Testimonial image">
+                <div class="testimonial-text">
+                  <p>Matt Cannon</p>
+                  <span>San Diego, CA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-sm-12">
+            <div class="testimonial-box">
+              <div class="testimonial-box-info">
+                <h4>“One of a kind restaurant”</h4>
+                <p>The culinary experience at place is first to none. The atmosphere is vibrant, the food - nothing short of extraordinary. The food was the highlight of our evening. Highly recommended.</p>
+
+              </div>
+              <hr>
+              <div class="testimonial-image">
+                <img src="./assets/images/home/testimonial-image3.png" alt="Testimonial image">
+                <div class="testimonial-text">
+                  <p>Andy Smith</p>
+                  <span>San Francisco, CA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      Copyright © 2024. All Rights Reserved
-    </di>
+    </div>
   </section>
-  <!-- End Footer -->
-  </div>
+
+  <!-- End Testimonial -->
+
+
+  <!-- Start Footer -->
+
+  <section class="footer">
+    <div class="container">
+      <div class="footer-details">
+        <div class="row">
+          <div class="row-text col-md-6 col-sm-12">
+            <a class="logo" href="index.html">
+              <span>Bistro Bliss</span>
+            </a>
+            <p>In the new era of technology we look a in the future with certainty and pride to for our company and.</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 mobile-d-none">
+            <div class="grid-container">
+              <div class="grid-item">
+                <img src="./assets/images/home/footer-image1.png" alt="footer image">
+              </div>
+              <div class="grid-item">
+                <img src="./assets/images/home/footer-image2.png" alt="footer image">
+              </div>
+              <div class="grid-item">
+                <img src="./assets/images/home/footer-image3.png" alt="footer image">
+              </div>
+              <div class="grid-item">
+                <img src="./assets/images/home/footer-image4.png" alt="footer image">
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="copy-right">
+            Copyright © 2024 Sprints Team 3. All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>
