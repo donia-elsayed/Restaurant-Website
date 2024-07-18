@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+input::placeholder,
+textarea::placeholder{
+    color:#495057;
+    font-size: 14px;
+}
+.contact-us__header{
+    background-image: url(../images/contact/contact-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+.contact-us__header h1{
+    text-transform: uppercase;
+}
+.contact-us__header p{
+    width:40%;
+    line-height: 1.5;
+    margin: 15px 0;
+    text-align: center;
+}
+.contact-us__content{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px
+}
+.contact-us__form{
+    flex-basis: 50%;
+    background-color: #F9F9F7;
+    flex-basis: 40%;
+    border-radius: 15px;
+    padding:15px;
+    margin:30px 0;
+}
+.contact-us__form__group{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px
+}
+.contact-us__form__element{
+    display: flex;
+    flex-direction: column;
+}
+.contact-us__form__control{
+    flex-basis: 45%;
+}
+.contact-us__info{
+    flex-basis: 55%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.contact-us__info__img{
+    background-image: url(../images/contact/contact-map-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width:70%;
+    margin: 0 auto;
+}
+.contact-us__info__items{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin:30px 0;
+}
+.contact-us__info__item{
+    flex-basis: 33%;
+    line-height: 2;
+}
+.contact-us__info__item h4{
+    text-transform: capitalize;
+    color: #ad343e;
+    font-size: 22px;
+}
+.contact-us__info__item span{
+  color: #2A435D;
+  display: block;
+  font-size: 14px;
+}
+.contact-us__info__item i{
+    color: #ad343e;
+    margin-right:5px;
+   
+}
+.contact-us__form__control label,
+.contact-us__form__element label{
+    text-transform: capitalize;
+    color:#ad343e;
+    font-size: 18px;
+    font-weight: 400;
+    margin:10px 0;
+}
+.contact-us__form__control input,
+.contact-us__form__element input,
+.contact-us__form__element textarea{
+    border: none;
+    align-self: center;
+    padding:15px 10px;
+    border-radius: 15px;
+    width: 100%;
+    margin-top: 10px;
+}
+.btn__send{
+    display: block;
+    width:80%;
+    border:none;
+    background-color: #ad343e;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 30px auto 10px;
+}
+@media (min-width:280px) and (max-width:567px){
+    .contact-us__header{
+        height:150px;
+    }
+    .contact-us__header h1{
+        font-size: 22px;
+    }
+    .contact-us__header p{
+        width:90%;
+    }
+    .contact-us__form,
+    .contact-us__info{
+        flex-basis: 100%;
+    }
+    .contact-us__info{
+        margin-top: 0;
+    }
+    .contact-us__form__control{
+        flex-basis: 100%;
+        
+    }
+    .contact-us__info__img{
+        height: 150px;
+    }
+    .contact-us__info__items{
+        justify-content: center;
+        text-align: center; 
+    }
+    .contact-us__info__item{
+        flex-basis: 65%;
+        margin-bottom: 10px;
+    }
+
+}
+@media (min-width:568px)and (max-width:668px){
+    .contact-us__header{
+        height:100px;
+    }
+    .contact-us__header h1{
+        font-size: 26px;
+    }
+    .contact-us__header p{
+        width:100%;
+    }
+    .contact-us__info__items{
+        justify-content: space-around;
+        text-align: center; 
+    }
+    .contact-us__info__item{
+        flex-basis: 45%;
+    }
+}
+@media (min-width:668px) and (max-width:920px){
+    .container{
+        width:95%;
+    }
+    .contact-us__header p{
+        width:70%;
+    }
+    .contact-us__info{
+        flex-basis: 55%;
+    }
+    .contact-us__form__control{
+        flex-basis: 100%;  
+    }
+    .contact-us__info__img{
+        width:70%;
+        height: 150px;
+    }
+    .contact-us__info__items{
+        justify-content: center;
+    }
+    .contact-us__info__item{
+        flex-basis: 50%;
+        text-align: center;
+    }
+}
+@media (min-width:921px) and (max-width:1024px){
+    .contact-us__form{
+        flex-basis: 45%;
+    }
+    .contact-us__form__control{
+        flex-basis: 100%;  
+    }
+    .contact-us__info__items{
+        justify-content: center;
+    }
+    .contact-us__info__item{
+        flex-basis: 45%;
+        text-align: center;
+    }
+}
